@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  --line-color: #e5e7eb;
+}
+
+.borderBlack {
+  @apply border border-black/10;
+}
+
+.buttonEffect {
+  @apply focus:scale-110 hover:scale-110 active:scale-105 transition-all;
+}
