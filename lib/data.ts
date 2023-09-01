@@ -1,10 +1,11 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FaLaptop } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import portfolioImg from "@/public/portfolio-threejs.png";
+import icsImg from "@/public/ics.png";
+import astduioImg from "@/public/astudio.webp";
+import shellImg from "@/public/42sh.png";
 
 export const links = [
   {
@@ -35,52 +36,71 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Graduated Aviation Management",
+    location: "Brisbane, Australia",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I got my bachelor's in aviation management and private pilot license.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2014 - 2018",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Australian Army Reserves Officer Cadet",
+    location: "Brisbane, Australia",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Gained theorical knowledge on military leadership and training.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2017 - 2019",
+  },
+  {
+    title: "Logistics Department Team Leader",
+    location: "Helsinki, Finland",
+    description:
+      "I worked as a team leader in the logistics department at a fast scaling startup.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2020 - 2021",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Graduated Hive Helsinki",
+    location: "Helsinki, Finland",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Gained valuable practical experience in software development through Hive Helsinki's pragmatic approach to learning.",
+    icon: React.createElement(FaLaptop),
+    date: "2021 - 2023",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "42sh (School Project)",
+    description:
+      "My team developed a shell in UNIX environment. The shell included features as terminal control, process control, argument parsing and more.",
+    tags: ["C", "UNIX", "Git", "Team Project"],
+    imageUrl: shellImg,
+    link: "https://github.com/maxrantil/42sh/",
+  },
+  {
+    title: "Three.js Portfolio",
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+    tags: ["React", "JavaScript", "Three.js"],
+    imageUrl: portfolioImg,
+    link: "https://portfolio-website-seven-gilt.vercel.app/",
   },
   {
-    title: "rmtDev",
+    title: "Salon Website",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+    tags: ["React", "JavaScript", "Next.js", "Instagram API", "SEO"],
+    imageUrl: astduioImg,
+    link: "https://astudiolarnaca.com/",
   },
   {
-    title: "Word Analytics",
+    title: "Conference Website",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    tags: ["React", "JavaScript", "Next.js", "Notion API", "Tailwind", "SEO"],
+    imageUrl: icsImg,
+    link: "https://nextjs-tutorial-sigma-murex.vercel.app/",
   },
 ] as const;
 
@@ -94,14 +114,20 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
   "MongoDB",
+  "PostgreSQL",
   "Redux",
   "GraphQL",
   "Apollo",
   "Express",
   "PostgreSQL",
   "Python",
-  "Django",
   "Framer Motion",
+  "Three.js",
+  "C",
+  "Rust",
+  "Shell",
+  "Neovim",
+  "VScode",
+  "Linux",
 ] as const;

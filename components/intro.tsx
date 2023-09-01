@@ -4,11 +4,12 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import { AiOutlineRead } from "react-icons/ai";
+import { BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { person } from "@/lib/config";
+import Me from "@/public/me.png";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -31,13 +32,13 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=368&h=368&q=100"
+              src={Me}
               alt="Anastasia Portrait"
               width="192"
               height="192"
               quality="95"
               priority={true}
-              className="h-24 w-24 object-cover rounded-full border-[0.35rem] border-white shadow-xl"
+              className="h-36 w-36 object-cover rounded-full border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
           <motion.span
@@ -60,12 +61,11 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Anastasia</span> I'm a{"  "}
-        <span className="font-bold">full-stack developer</span> with{"  "}
-        <span className="font-bold">2 years</span>{" "}
-        of experience. I enjoy building{" "}
-        <span className="italic">sites & apps</span>. My focus is{"   "}
-        <span className="underline">React (Next.js)</span>.
+        <span className="font-bold">Hello, I'm Mike!</span> I'm a{"  "}
+        <span className="font-bold">junior developer</span> from{"  "}
+        <span className="font-bold">Hive Helsinki</span>. I enjoy{" "}
+        <span className="italic">building websites and linux development</span>. My focus is{"   "}
+        <span className="underline">React (Next.js), NixOs, and Arch</span>.
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-3 px-4 text-lg font-medium"
@@ -84,30 +84,34 @@ export default function Intro() {
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none buttonEffect hover:bg-gray-950 cursor-pointer"
         >
           Let's Connect{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+          <span className="opacity-70 group-hover:translate-x-1 transition">
+            {person.intro.contact.icon}
+          </span>
         </Link>
         <a
-          href="https://www.canva.com/design/DAFm624vqfU/GCbjHlKOXLF3QIaeFb3j6Q/view#1"
+          href={person.socials.cv}
           target="_blank"
           rel="noreferrer"
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none buttonEffect cursor-pointer borderBlack"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none buttonEffect cursor-pointer borderBlack dark:bg-white/10"
         >
           Read Resume{" "}
-          <AiOutlineRead className="opacity-70 group-hover:-translate-y-1 transition" />
+          <span className="opacity-70 group-hover:translate-x-1 transition">
+            {person.intro.resume.icon}
+          </span>
         </a>
         <a
-          href="https://www.linkedin.com/in/michelphilippebarutel/"
+          href={person.socials.linked}
           target="_blank"
           rel="noreferrer"
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full cursor-pointer borderBlack outline-none buttonEffect hover:text-gray-950"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full cursor-pointer borderBlack outline-none buttonEffect hover:text-gray-950 dark:bg-white/10 dark:text-white/60"
         >
           <BsLinkedin />
         </a>
         <a
-          href="https://github.com/mike-ninja/"
+          href={person.socials.github}
           target="_blank"
           rel="noreferrer"
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] cursor-pointer borderBlack outline-none buttonEffect hover:text-gray-950"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] cursor-pointer borderBlack outline-none buttonEffect hover:text-gray-950 dark:bg-white/10 dark:text-white/60"
         >
           <FaGithubSquare />
         </a>
