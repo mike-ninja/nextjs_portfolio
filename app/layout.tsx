@@ -6,12 +6,12 @@ import { Toaster } from "react-hot-toast";
 import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
+import { person } from "@/lib/config";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Anastasia | Personal Portfolio",
-  description: "Anastasia is an HR professional with 2 years expereonce.",
+  ...person.metaData,
 };
 
 export default function RootLayout({

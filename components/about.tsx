@@ -22,9 +22,11 @@ export default function About() {
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
         After graduating with a degree in{" "}
-        <span className="font-medium">Aviation Management</span>, I decided to
-        pursue my passion for programming. I enrolled in a coding bootcamp, Hive
-        Helsinki, and learned{" "}
+        <span className="font-medium">Aviation Management</span>{" "}
+        and gaining profesional experience as a{" "}
+        <span className="font-medium">Department Team Leader</span>, I decided
+        to pursue my passion for programming. I enrolled in a coding bootcamp,
+        Hive Helsinki, and learned{" "}
         <span className="font-medium">
           low level software development
         </span>. Since graduation, I have devoted my time to{" "}
@@ -42,16 +44,16 @@ export default function About() {
         </span>
         . I am also familiar with{" "}
         <span className="font-medium">
-          Typescript and C
+          Typescript and C{" "}
         </span>
-        .{" "}
+        programming.{" "}
         <span className="italic">When I'm not coding</span>, I enjoy playing
         video games, rock climbing, and hiking.
       </p>
       <p className="mb-3">
         I am always looking to learn new technologies and I am currently looking
         for a <span className="font-medium">full-time/part-time</span>{" "}
-        junior software developer role. 
+        junior software developer role.
       </p>
     </motion.section>
   );

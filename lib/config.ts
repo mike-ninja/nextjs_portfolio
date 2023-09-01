@@ -7,12 +7,16 @@ export const person = {
     first: "Michel Philippe",
     last: "Barutel",
   },
+  metaData: {
+    title: "Michel Philippe | Portfolio",
+    description: "Website coded by Michel Philippe Barutel",
+  },
   contact: {
-    // phone: "+3584578347332",
     email: "michelbarutel.work@hotmail.com",
   },
   socials: {
-    cv: "https://www.canva.com/design/DAFm624vqfU/GCbjHlKOXLF3QIaeFb3j6Q/view#1",
+    cv:
+      "https://www.canva.com/design/DAFm624vqfU/GCbjHlKOXLF3QIaeFb3j6Q/view#1",
     linked: "https://www.linkedin.com/in/michelphilippebarutel/",
     github: "https://github.com/mike-ninja/",
   },
@@ -25,5 +29,5 @@ export const person = {
       text: "Read Resume",
       icon: React.createElement(AiOutlineRead),
     },
-  }
+  },
 } as const;

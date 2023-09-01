@@ -64,7 +64,8 @@ export default function Intro() {
         <span className="font-bold">Hello, I'm Mike!</span> I'm a{"  "}
         <span className="font-bold">junior developer</span> from{"  "}
         <span className="font-bold">Hive Helsinki</span>. I enjoy{" "}
-        <span className="italic">building websites and linux development</span>. My focus is{"   "}
+        <span className="italic">building websites and linux development</span>.
+        My focus is{"   "}
         <span className="underline">React (Next.js), NixOs, and Arch</span>.
       </motion.h1>
       <motion.div
@@ -81,7 +82,7 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
             setActiveSection("Contact");
           }}
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none buttonEffect hover:bg-gray-950 cursor-pointer"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none buttonEffect hover:bg-gray-950 cursor-pointer dark:bg-gray-950"
         >
           Let's Connect{" "}
           <span className="opacity-70 group-hover:translate-x-1 transition">
@@ -99,22 +100,24 @@ export default function Intro() {
             {person.intro.resume.icon}
           </span>
         </a>
-        <a
-          href={person.socials.linked}
-          target="_blank"
-          rel="noreferrer"
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full cursor-pointer borderBlack outline-none buttonEffect hover:text-gray-950 dark:bg-white/10 dark:text-white/60"
-        >
-          <BsLinkedin />
-        </a>
-        <a
-          href={person.socials.github}
-          target="_blank"
-          rel="noreferrer"
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] cursor-pointer borderBlack outline-none buttonEffect hover:text-gray-950 dark:bg-white/10 dark:text-white/60"
-        >
-          <FaGithubSquare />
-        </a>
+        <div className="flex gap-2">
+          <a
+            href={person.socials.linked}
+            target="_blank"
+            rel="noreferrer"
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full cursor-pointer borderBlack outline-none buttonEffect hover:text-gray-950 dark:bg-white/10 dark:text-white/60"
+          >
+            <BsLinkedin />
+          </a>
+          <a
+            href={person.socials.github}
+            target="_blank"
+            rel="noreferrer"
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] cursor-pointer borderBlack outline-none buttonEffect hover:text-gray-950 dark:bg-white/10 dark:text-white/60"
+          >
+            <FaGithubSquare />
+          </a>
+        </div>
       </motion.div>
     </section>
   );

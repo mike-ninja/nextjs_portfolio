@@ -2,6 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaLaptop } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import { PiMedalMilitaryBold } from "react-icons/pi";
 import portfolioImg from "@/public/portfolio-threejs.png";
 import icsImg from "@/public/ics.png";
 import astduioImg from "@/public/astudio.webp";
@@ -48,7 +49,7 @@ export const experiencesData = [
     location: "Brisbane, Australia",
     description:
       "Gained theorical knowledge on military leadership and training.",
-    icon: React.createElement(LuGraduationCap),
+    icon: React.createElement(PiMedalMilitaryBold),
     date: "2017 - 2019",
   },
   {
