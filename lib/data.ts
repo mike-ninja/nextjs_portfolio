@@ -4,7 +4,7 @@ import { FaLaptop } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import { PiMedalMilitaryBold } from "react-icons/pi";
 import portfolioImg from "@/public/portfolio-threejs.png";
-import icsImg from "@/public/ics.png";
+import icsImg from "@/public/icsWebsite.png";
 import astduioImg from "@/public/astudio.webp";
 import shellImg from "@/public/42sh.png";
 
@@ -82,7 +82,7 @@ export const projectsData = [
   {
     title: "Three.js Portfolio",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+      "First portfolio website with 3D elements and utilization of Three.js library.",
     tags: ["React", "JavaScript", "Three.js"],
     imageUrl: portfolioImg,
     link: "https://portfolio-website-seven-gilt.vercel.app/",
@@ -90,18 +90,18 @@ export const projectsData = [
   {
     title: "Salon Website",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "JavaScript", "Next.js", "Instagram API", "SEO"],
+      "Utilizing Next.js benefits of server side rendering for better search engine optimisation. Additionally, with Instagram fetching for latest instagram post rendering.",
+    tags: ["React", "JavaScript", "Next.js", "Instagram API"],
     imageUrl: astduioImg,
     link: "https://astudiolarnaca.com/",
   },
   {
     title: "Conference Website",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "JavaScript", "Next.js", "Notion API", "Tailwind", "SEO"],
+      "Website for conferences management company with utilization of Contentful as easy CMS tool for the client.",
+    tags: ["React", "JavaScript", "TypeScript", "Next.js", "Contentful", "Tailwind"],
     imageUrl: icsImg,
-    link: "https://nextjs-tutorial-sigma-murex.vercel.app/",
+    link: "https://next-ics-website.vercel.app/",
   },
 ] as const;
 
