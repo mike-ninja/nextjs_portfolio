@@ -16,7 +16,7 @@ export const person = {
   },
   socials: {
     cv:
-      "https://www.canva.com/design/DAFm624vqfU/GCbjHlKOXLF3QIaeFb3j6Q/view#1",
+      "https://www.canva.com/design/DAFu3ijg3eg/LD_7Mt6yyJylQsREKgpchw/view?utm_content=DAFu3ijg3eg&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink",
     linked: "https://www.linkedin.com/in/michelphilippebarutel/",
     github: "https://github.com/mike-ninja/",
   },
