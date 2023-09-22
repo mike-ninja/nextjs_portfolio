@@ -33,7 +33,7 @@ export default function Intro() {
           >
             <Image
               src={Me}
-              alt="Anastasia Portrait"
+              alt="Michel Philippe Barutel Portrait"
               width="192"
               height="192"
               quality="95"
@@ -66,7 +66,7 @@ export default function Intro() {
         <span className="font-bold">Hive Helsinki</span>. I enjoy{" "}
         <span className="italic">building websites and linux development</span>.
         My focus is{"   "}
-        <span className="underline">React (Next.js), NixOs, and Arch</span>.
+        <span className="underline">React (Next.js), TypeScript, and Arch</span>.
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-3 px-4 text-lg font-medium"
@@ -82,7 +82,7 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
             setActiveSection("Contact");
           }}
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none buttonEffect hover:bg-gray-950 cursor-pointer dark:bg-gray-950"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none buttonEffect hover:bg-gray-950 cursor-pointer dark:bg-gray-950 z-[99]"
         >
           Let's Connect{" "}
           <span className="opacity-70 group-hover:translate-x-1 transition">
@@ -93,7 +93,7 @@ export default function Intro() {
           href={person.socials.cv}
           target="_blank"
           rel="noreferrer"
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none buttonEffect cursor-pointer borderBlack dark:bg-white/10"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none buttonEffect cursor-pointer borderBlack dark:bg-white/10 z-[99]"
         >
           Read Resume{" "}
           <span className="opacity-70 group-hover:translate-x-1 transition">
@@ -105,7 +105,7 @@ export default function Intro() {
             href={person.socials.linked}
             target="_blank"
             rel="noreferrer"
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full cursor-pointer borderBlack outline-none buttonEffect hover:text-gray-950 dark:bg-white/10 dark:text-white/60"
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full cursor-pointer borderBlack outline-none buttonEffect hover:text-gray-950 dark:bg-white/10 dark:text-white/60 z-[99]"
           >
             <BsLinkedin />
           </a>
@@ -113,7 +113,7 @@ export default function Intro() {
             href={person.socials.github}
             target="_blank"
             rel="noreferrer"
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] cursor-pointer borderBlack outline-none buttonEffect hover:text-gray-950 dark:bg-white/10 dark:text-white/60"
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] cursor-pointer borderBlack outline-none buttonEffect hover:text-gray-950 dark:bg-white/10 dark:text-white/60 z-[99]"
           >
             <FaGithubSquare />
           </a>

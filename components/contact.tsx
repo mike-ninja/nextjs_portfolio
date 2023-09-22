@@ -28,7 +28,7 @@ export default function Contact() {
       viewport={{
         once: true,
       }}
-      className="mb-20 sm:mb-28 w-[min(100%,40rem)] text-center"
+      className="mb-20 sm:mb-28 w-[min(100%,40rem)] text-center z-[99]"
     >
       <SectionHeading>Contact Me</SectionHeading>
       <p className="text-gray-700 -mt-6 dark:text-white/80">
