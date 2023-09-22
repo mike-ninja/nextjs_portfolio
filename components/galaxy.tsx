@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import PlanetCanvas from "@/canvas/planet-canvas";
-import StarsCanvas from "@/canvas/stars-canvas";
 
 export default function Galaxy() {
   const [gl, setGL] = useState<RenderingContext | null>(null);
@@ -25,7 +24,6 @@ export default function Galaxy() {
   return (
     <section className="h-screen w-full z-0">
       <PlanetCanvas />
-      <StarsCanvas />
     </section>
   );
 }
