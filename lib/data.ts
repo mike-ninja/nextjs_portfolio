@@ -37,20 +37,12 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated Hive Helsinki",
-    location: "Helsinki, Finland",
+    title: "Graduated Aviation Management",
+    location: "Brisbane, Australia",
     description:
-    "Gained valuable practical experience in software development through Hive Helsinki's pragmatic approach to learning.",
-    icon: React.createElement(FaLaptop),
-    date: "2021 - 2023",
-  },
-  {
-    title: "Logistics Department Team Leader",
-    location: "Helsinki, Finland",
-    description:
-      "I worked as a team leader in the logistics department at a fast scaling startup.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2020 - 2021",
+      "I got my bachelor's in aviation management and private pilot license.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2014 - 2018",
   },
   {
     title: "Australian Army Reserves Officer Cadet",
@@ -61,12 +53,20 @@ export const experiencesData = [
     date: "2017 - 2019",
   },
   {
-    title: "Graduated Aviation Management",
-    location: "Brisbane, Australia",
+    title: "Logistics Department Team Leader",
+    location: "Helsinki, Finland",
     description:
-      "I got my bachelor's in aviation management and private pilot license.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2014 - 2018",
+      "I worked as a team leader in the logistics department at a fast scaling startup.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2020 - 2021",
+  },
+  {
+    title: "Graduated Hive Helsinki",
+    location: "Helsinki, Finland",
+    description:
+      "Gained valuable practical experience in software development through Hive Helsinki's pragmatic approach to learning.",
+    icon: React.createElement(FaLaptop),
+    date: "2021 - 2023",
   },
 ] as const;
 
@@ -99,7 +99,14 @@ export const projectsData = [
     title: "Conference Website",
     description:
       "Website for conferences management company with utilization of Contentful as easy CMS tool for the client.",
-    tags: ["React", "JavaScript", "TypeScript", "Next.js", "Contentful", "Tailwind"],
+    tags: [
+      "React",
+      "JavaScript",
+      "TypeScript",
+      "Next.js",
+      "Contentful",
+      "Tailwind",
+    ],
     imageUrl: icsImg,
     link: "https://next-ics-website.vercel.app/",
   },
@@ -127,7 +134,7 @@ export const skillsData = [
   "Three.js",
   "C",
   "Rust",
-  "Shell",
+  "Bash",
   "Neovim",
   "VScode",
   "Linux",

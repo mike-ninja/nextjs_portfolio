@@ -66,7 +66,9 @@ export default function Intro() {
         <span className="font-bold">Hive Helsinki</span>. I enjoy{" "}
         <span className="italic">building websites and linux development</span>.
         My focus is{"   "}
-        <span className="underline">React (Next.js), TypeScript, and Arch</span>.
+        <span className="underline">
+          React (Next.js), TypeScript, and Systems Administration
+        </span>.
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-3 px-4 text-lg font-medium"
