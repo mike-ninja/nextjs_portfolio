@@ -35,8 +35,8 @@ export default function About() {
 
       <p className="mb-3">
         <span className="italic">My favorite part of programming</span>{" "}
-        is the endless posibilities of creating a useful, robust, and beautiful
-        software. I <span className="underline">love</span>{" "}
+        is the endless posibilities of creating a useful, robust, and easily
+        maintanable software. I <span className="underline">love</span>{" "}
         the feeling of coming up with ideas to further improve the project. My
         core stack is{" "}
         <span className="font-medium">

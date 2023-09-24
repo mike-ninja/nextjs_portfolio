@@ -61,13 +61,28 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Mike!</span> I'm a{"  "}
-        <span className="font-bold">junior developer</span> from{"  "}
-        <span className="font-bold">Hive Helsinki</span>. My focus is{"   "}
-        <span className="underline">
-          Modern Web Development Techniques and Technologies, and Systems
-          Administration
-        </span>.
+        <span className="font-bold">Hello, I'm Mike,</span>{" "}
+        a recent graduate from{" "}
+        <span className="font-bold underline">
+          <Link
+            href="https://www.hive.fi/en/about-hive"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Hive Helsinki
+          </Link>
+        </span>, a prestigious{" "}
+        <span className="italic">programming school</span> among the{" "}
+        <span className="italic underline">
+          <Link
+            href="https://www.42network.org/about-us/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            42 Schools Network
+          </Link>
+        </span>. I'm excited to embark on my journey as a{" "}
+        <span className="font-bold">Junior Developer</span>
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-3 px-4 text-lg font-medium"
