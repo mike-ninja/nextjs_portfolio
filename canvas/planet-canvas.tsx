@@ -9,7 +9,7 @@ function Planet() {
   return (
     <primitive
       object={planet.scene}
-      scale={0.7}
+      scale={0.5}
     />
   );
 }

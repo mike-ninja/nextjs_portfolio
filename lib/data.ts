@@ -79,14 +79,14 @@ export const projectsData = [
     imageUrl: shellImg,
     link: "https://github.com/maxrantil/42sh/",
   },
-  {
-    title: "Three.js Portfolio",
-    description:
-      "First portfolio website with 3D elements and utilization of Three.js library.",
-    tags: ["React", "JavaScript", "Three.js"],
-    imageUrl: portfolioImg,
-    link: "https://portfolio-website-seven-gilt.vercel.app/",
-  },
+  // {
+  //   title: "Three.js Portfolio",
+  //   description:
+  //     "First portfolio website with 3D elements and utilization of Three.js library.",
+  //   tags: ["React", "JavaScript", "Three.js"],
+  //   imageUrl: portfolioImg,
+  //   link: "https://portfolio-website-seven-gilt.vercel.app/",
+  // },
   {
     title: "Salon Website",
     description:
