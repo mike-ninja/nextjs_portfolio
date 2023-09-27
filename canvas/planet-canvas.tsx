@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "./canvas-loader";
@@ -41,13 +41,3 @@ export default function PlanetCanvas() {
     </Canvas>
   );
 }
-
-// <motion.div
-//   initial={{ opacity: 0, scale: 0 }}
-//   animate={{ opacity: 1, scale: 1 }}
-//   transition={{
-//     type: "spring",
-//     duration: 0.2,
-//   }}
-//   className="h-full"
-// >
