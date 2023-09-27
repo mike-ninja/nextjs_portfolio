@@ -22,8 +22,7 @@ function Stars() {
       <Points ref={ref} positions={sphere} stride={3} frustumCulled>
         <PointMaterial
           transparent
-          // color="#f272c8"
-          color="#f5ba16"
+          color="#f272c8"
           size={0.002}
           sizeAttentuation={true}
           depthWrite={false}

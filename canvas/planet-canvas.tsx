@@ -10,10 +10,10 @@ function Planet() {
     <primitive
       object={planet.scene}
       scale={0.7}
-      // rotation-y={0.4}
     />
   );
 }
+
 export default function PlanetCanvas() {
   return (
     <Canvas
@@ -41,3 +41,13 @@ export default function PlanetCanvas() {
     </Canvas>
   );
 }
+
+// <motion.div
+//   initial={{ opacity: 0, scale: 0 }}
+//   animate={{ opacity: 1, scale: 1 }}
+//   transition={{
+//     type: "spring",
+//     duration: 0.2,
+//   }}
+//   className="h-full"
+// >
