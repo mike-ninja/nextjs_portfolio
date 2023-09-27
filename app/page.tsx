@@ -5,10 +5,12 @@ import Projects from "@/components/projects";
 import SectionDivider from "@/components/section-divider";
 import Skills from "@/components/skills";
 import Contact from "@/components/contact";
+import Galaxy from "@/components/galaxy";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center px-4">
+      <Galaxy />
       <Intro />
       <SectionDivider />
       <About />
@@ -17,5 +19,5 @@ export default function Home() {
       <Experience />
       <Contact />
     </main>
-  )
+  );
 }
