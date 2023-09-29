@@ -21,7 +21,7 @@ export default function Galaxy() {
   }, []);
 
   if (!gl || theme !== "dark") {
-    return null;
+    return <div className="py-14 sm:py-16"></div>;
   }
 
   return (
