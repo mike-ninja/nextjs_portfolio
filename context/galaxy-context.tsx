@@ -23,20 +23,10 @@ export default function GalaxyContextProvider({
   const toggleGalaxy = () => {
     if (galaxy == "on") {
       setGalaxy("off");
-      window.localStorage.setItem("galaxy", "off");
     } else {
       setGalaxy("on");
-      window.localStorage.setItem("galaxy", "on");
     }
   };
-
-  useEffect(() => {
-    const localGalaxy = window.localStorage.getItem("galaxy") as Galaxy | null;
-
-    if (localGalaxy) {
-      setGalaxy(localGalaxy);
-    }
-  }, []);
 
   return (
     <GalaxyContext.Provider
