@@ -3,10 +3,10 @@
 import React, { useEffect, useState } from "react";
 import PlanetCanvas from "@/canvas/planet-canvas";
 import StarsCanvas from "@/canvas/stars-canvas";
-import { useTheme } from "@/context/theme-context";
+import { useGalaxy } from "@/context/galaxy-context";
 
 export default function Galaxy() {
-  const { theme } = useTheme();
+  const { galaxy } = useGalaxy();
   const [gl, setGL] = useState<RenderingContext | null>(null);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export default function Galaxy() {
     }
   }, []);
 
-  if (!gl || theme !== "dark") {
+  if (!gl || galaxy === "off") {
     return <div className="py-14 sm:py-16"></div>;
   }
 
