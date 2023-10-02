@@ -20,7 +20,26 @@ export default function Galaxy() {
     }
   }, []);
 
-  if (!gl || galaxy === "off") {
+  // if (!gl && galaxy === "off") {
+  //   return <div className="py-14 sm:py-16"></div>;
+  // } else if (!gl && galaxy === "on") {
+  //   return (
+  //     <div className="py-14 sm:py-16">
+  //       <small>
+  //         The Galaxy will not show on browser's that does not support WebGL.
+  //       </small>
+  //     </div>
+  //   );
+  // }
+  if (!gl && galaxy === "on") {
+    return (
+      <div className="py-20 sm:py-28">
+        <small>
+          The Galaxy will not show on browsers that does not support WebGL.
+        </small>
+      </div>
+    );
+  } else if (!gl || galaxy === "off") {
     return <div className="py-14 sm:py-16"></div>;
   }
 
