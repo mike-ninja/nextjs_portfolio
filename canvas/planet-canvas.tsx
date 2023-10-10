@@ -18,14 +18,21 @@ function Planet() {
 export default function PlanetCanvas() {
   const [springs, api] = useSpring(
     () => ({
-      scale: 1,
+      from: {
+        scale: 0,
+        opacity: 0,
+      },
+      to: {
+        scale: 1,
+        opacity: 1,
+      }
     }),
     [],
   );
 
   const handlePointerEnter = () => {
     api.start({
-      scale: 1.2,
+      scale: 1.1,
     });
   };
 

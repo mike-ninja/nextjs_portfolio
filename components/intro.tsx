@@ -9,13 +9,11 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { person } from "@/lib/config";
-import { useTheme } from "@/context/theme-context";
 import Me from "@/public/me.png";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
-  const { theme } = useTheme();
 
   return (
     <section
