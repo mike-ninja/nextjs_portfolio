@@ -44,7 +44,7 @@ export default function Galaxy() {
   }
 
   return (
-    <section className="h-screen w-full z-0">
+    <section className="h-screen w-full z-0 relative">
       <StarsCanvas />
       <PlanetCanvas />
     </section>
