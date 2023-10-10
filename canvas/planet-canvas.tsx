@@ -2,6 +2,7 @@ import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "./canvas-loader";
+import { animated, useSpring } from "@react-spring/three";
 
 function Planet() {
   const planet = useGLTF("/planet/scene.gltf");
@@ -15,6 +16,25 @@ function Planet() {
 }
 
 export default function PlanetCanvas() {
+  const [springs, api] = useSpring(
+    () => ({
+      scale: 1,
+    }),
+    [],
+  );
+
+  const handlePointerEnter = () => {
+    api.start({
+      scale: 1.2,
+    });
+  };
+
+  const handlePointerLeave = () => {
+    api.start({
+      scale: 1,
+    });
+  };
+
   return (
     <Canvas
       frameloop="always"
@@ -36,7 +56,13 @@ export default function PlanetCanvas() {
           minPolarAngle={Math.PI / 2}
           autoRotate
         />
-        <Planet />
+        <animated.mesh
+          onPointerEnter={handlePointerEnter}
+          onPointerLeave={handlePointerLeave}
+          scale={springs.scale}
+        >
+          <Planet />
+        </animated.mesh>
         <Preload all />
       </Suspense>
     </Canvas>
