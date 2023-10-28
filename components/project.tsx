@@ -34,7 +34,7 @@ export default function Project({
     >
       <section
         ref={ref}
-        className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] sm:group-even:pl-8 hover:bg-gray-200 transition dark:bg-white/10 hover:dark:bg-white/20 dark:text-white"
+        className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:group-even:pl-8 hover:bg-gray-200 transition dark:bg-white/10 hover:dark:bg-white/20 dark:text-white"
       >
         <Link
           href={link}
@@ -49,7 +49,7 @@ export default function Project({
             <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
               {tags.map((tag, index) => (
                 <li
-                  className="bg-black/70 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/60"
+                  className="flex items-center bg-black/70 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/60"
                   key={index}
                 >
                   {tag}
