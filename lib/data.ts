@@ -111,7 +111,7 @@ export const projectsData = [
       "Tailwind",
     ],
     imageUrl: internationalImg,
-    link: "https://next-ics-website.vercel.app/",
+    link: "https://ics-mainstream-git-main-mike-ninja.vercel.app/",
   },
 ] as const;
 
