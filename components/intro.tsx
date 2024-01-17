@@ -61,8 +61,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Mike,</span>{" "}
-        a recent graduate from{" "}
+        <span className="font-bold">Hello, I'm Mike,</span> a graduate from{" "}
         <span className="font-bold underline">
           <Link
             href="https://www.hive.fi/en/about-hive"
@@ -81,8 +80,7 @@ export default function Intro() {
           >
             42 Schools Network
           </Link>
-        </span>. I'm excited to embark on my journey as a{" "}
-        <span className="font-bold">Junior Developer</span>
+        </span>
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-3 px-4 text-lg font-medium"
