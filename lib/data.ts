@@ -5,7 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import { PiMedalMilitaryBold } from "react-icons/pi";
 import astduioImg from "@/public/astudio.webp";
 import shellImg from "@/public/42sh.png";
-import IndigenousImg from "@/public/ics_indigenous.webp";
+import IndigenousImg from "@/public/ics_indigenous.png";
 import internationalImg from "@/public/ics_international.webp";
 
 export const links = [

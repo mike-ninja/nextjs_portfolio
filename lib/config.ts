@@ -5,11 +5,11 @@ import { AiOutlineRead } from "react-icons/ai";
 export const person = {
   name: {
     first: "Michel Philippe",
-    last: "Barutel",
+    last: "Edubas",
   },
   metaData: {
     title: "Michel Philippe | Portfolio",
-    description: "Website coded by Michel Philippe Barutel",
+    description: "Website coded by Michel Philippe Edubas",
   },
   contact: {
     email: "michelbarutel.work@hotmail.com",
