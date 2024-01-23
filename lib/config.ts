@@ -16,7 +16,7 @@ export const person = {
   },
   socials: {
     cv:
-      "https://www.canva.com/design/DAFyvSa3Ry8/3f6cb6w0-7c3Tsdx27HrWg/view?utm_content=DAFyvSa3Ry8&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+      "https://www.canva.com/design/DAFvGQngBoI/u_Q4JTnGCYY00YSuKqwvLA/view?utm_content=DAFvGQngBoI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink",
     linked: "https://www.linkedin.com/in/micheledubas/",
     github: "https://github.com/mike-ninja/",
   },
