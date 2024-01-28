@@ -98,7 +98,7 @@ export const projectsData = [
       "Tailwind",
     ],
     imageUrl: IndigenousImg,
-    link: "https://next-ics-website.vercel.app/",
+    link: "https://next-ics-website-git-xeroupdate-mike-ninja.vercel.app/",
   },
   {
     title: "International Conference Services Website",
