@@ -7,6 +7,7 @@ import astduioImg from "@/public/astudio.webp";
 import shellImg from "@/public/42sh.png";
 import IndigenousImg from "@/public/ics_indigenous.png";
 import internationalImg from "@/public/ics_international.webp";
+import nOneImg from "@/public/none-websites.webp";
 
 export const links = [
   {
@@ -112,6 +113,19 @@ export const projectsData = [
     ],
     imageUrl: internationalImg,
     link: "https://ics-mainstream-git-main-mike-ninja.vercel.app/",
+  },
+  {
+    title: "N1 Website Agency",
+    description:
+      "Web development agency website with a focus on modern design and user experience.",
+    tags: [
+      "TypeScript",
+      "Next.js",
+      "Framer Motion",
+      "Tailwind",
+    ],
+    imageUrl: nOneImg,
+    link: "https://nonewebsites.com.au",
   },
 ] as const;
 
